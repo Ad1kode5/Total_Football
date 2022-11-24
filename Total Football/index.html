@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Total Football</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="Image/Icon.png">
+    
+    <style>
+      
+      body{
+       
+       max-width: 100%;
+       overflow-x: hidden;
+       
+      }
+        .stroke-text{
+            text-align: justify ;
+            font-family: 'Orbitron';
+            fill: none;
+            position: absolute;
+            font-size: 9vw;
+            stroke-width:".015";
+            top: 10%;
+            color: transparent;
+            text-shadow:1px 0 0 greenyellow,0 1px 0 greenyellow,-1px 0 0 greenyellow,0 -1px 0 greenyellow;
+            animation-name: title;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 1s;
+            transition: ease-out;
+        }
+        @keyframes title {
+          from{
+            left: 100%;
+          }
+          to{
+            left: 0%;
+          }
+        }
+        
+        .a{
+            text-align: center;
+            font-family: 'Orbitron';
+            color: greenyellow;
+            margin-top:35px;
+        }
+        .x{
+            /* background-color: black ; */
+            background-color:hsl(0, 0%, 5%);
+            height: 600px;
+            border: 1px solid; 
+            box-sizing: border-box; 
+        }
+        .y{
+            background-color: greenyellow;
+            
+        }
+        .pa{
+            position: relative;
+            font-family: 'Orbitron';
+
+        }
+        .row1{
+            margin-top: 60px;
+        }
+        .row2{
+            margin-top: 60px;
+        }
+        .nav-link{
+            color: greenyellow;
+        }
+        .foot{
+            background: #020306f0;
+            padding: 50px;
+            color: #fff;
+        }
+        .footx{
+            color: greenyellow;
+            text-decoration: none;
+            font-size: 12px;
+        } 
+        .column{
+          flex: 33.33%;
+          padding: 20px;
+          align-content: center;
+          justify-content: center;
+        }  
+        .flaglink{
+            display: flex;
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            transition: all 1s ease-in-out 0s;
+            /* flex: 33.33%; */
+            padding: 10px;
+            
+            
+        }
+        
+        .flaglink:hover{
+            width: 325px;
+            height: 225px;
+        }
+        .images{
+            opacity: 1;
+            display: block;
+            min-width: 100%;
+            min-height: 100%;
+            transition: all 1s ease-in-out .3s;
+            backface-visibility: hidden;
+            box-shadow: 10px 10px 5px gray;
+            /* width:  100px;
+            height: 100px; */
+            object-fit: cover;
+            
+        }
+        /* .over{
+          position: relative;
+        } */
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+      
+            <img src="Image/Icon.png" style="width: 50px;">
+          </a>
+      
+          <!--button start-->
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#a">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+      
+      
+          <!--menu div start-->
+          <div class="navbar-collapse collapse" id="a">
+            <ul class="navbar-nav ms-auto">
+            <li><a href="Index.html" class="nav-link">HOME</a></li>
+            <li><a href="Germany.html" class="nav-link">GERMANY</a></li>
+            <li><a href="Spain.html" class="nav-link">SPAIN</a></li>
+            <li><a href="Argentina.html" class="nav-link">ARGENTINA</a></li>
+            <!-- <li><a href="" class="nav-link">Home</a></li> -->
+            </ul>
+          </div> 
+          <!--menu div end-->
+        </div><!--container-fluid end-->  
+      </nav>
+    <div>
+          <div class="row">
+
+                
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://wallpapercave.com/wp/wp1936773.jpg" class="d-block w-100" alt="..." >
+                    <b><h1 class="stroke-text">TOTAL <br> <span>FOOTBALL</span> </h1></b>
+                  </div> 
+                  
+                  <div class="carousel-item">
+                    <img src="https://vignette.wikia.nocookie.net/liverpoolfc/images/8/85/Anfieldmodern.jpg/revision/latest/scale-to-width-down/2000?cb=20200501150202" class="d-block w-100" alt="...">
+                    <h1 class="stroke-text">TOTAL <br> FOOTBALL</h1>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="https://th.bing.com/th/id/R.84949103cb21420650645816faa0eec4?rik=HG1e6IdmvqrSAQ&riu=http%3a%2f%2fwww.travelweekly.com%2fuploadedImages%2fAll_TW_Art%2fShutterstock_Art%2f2018%2fLuzhniki.jpg%3fn%3d8483%26width%3d1540%26height%3d866%26mode%3dcrop%26Anchor%3dMiddleCenter&ehk=kgPiprZ4UlTCY%2fgHko2RJlkgRywE2sSnCFZVC1%2b3COA%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+                    <h1 class="stroke-text">TOTAL <br> FOOTBALL</h1>
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                
+        </div>
+     
+      
+
+    </div><br>
+    <div class="container-fluid x" data-aos="fade-left">
+        <div class="row">
+
+                
+                <h2 class="a">KICK OFF !!!</h2><br>
+                <div class="col-md-4 row1">
+                    <img src="https://d.newsweek.com/en/full/338114/fifa-trophy.jpg" alt="" width="100%" >
+                </div>
+                <div class="col-md-8 row2">
+                    <p class="pa" style="text-align:justify ; color: greenyellow; word-spacing: 1px; font:'Garamond;">FIFA World Cup has already begun, and so have the celebrations and festivities. It isn't just a tournament it's a feeling , an emotion , a festival. You can check your favourite team's squad to get more info regarding the players and matches.
+                        
+                    </p>
+                </div>
+                
+        </div>
+    </div>  <br><br>
+    <div class="container" data-aos="fade-right">
+      <center><div class="row over">
+         
+        <img src="https://p2.piqsels.com/preview/12/563/584/stadium-crowd-soccer-person.jpg" alt="" width="100%" height="600" class="crowd">
+         <div class="column">
+            <a class="flaglink" href="Germany.html"><img class="flaglink" src="https://wallpapercave.com/wp/wc1800938.jpg" alt=""></a>
+         </div>
+         <div class="column">
+          <a class="flaglink" href="Spain.html"><img class="flaglink" src="https://th.bing.com/th/id/R.9d7997e4e13b1c737217f8d1a3f1c6f5?rik=2tCsgtAE5w6xoA&riu=http%3a%2f%2fechesters.co.uk%2fimages%2fposts%2fflag-of-spain.png&ehk=t0cUSAxXePoXOokg%2bPWqCFoxqJQ%2bXhrIA3V%2b9QQEeoM%3d&risl=&pid=ImgRaw&r=0" alt=""></a>        
+          </div>
+        <div class="column">
+          <a class="flaglink" href="Argentina.html"><img class="flaglink" src="https://th.bing.com/th/id/R.983375b5469ae2f8048de48e2f8b132d?rik=b1gJcn2UCOzyKA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fitYcVwJ.png&ehk=KZCwhnmaKj2ZAzZl3cg1wGFc3U7QMzhSFVt4DGqOFLE%3d&risl=&pid=ImgRaw&r=0" alt=""></a>        
+        </div> 
+          
+          
+      </div></center>
+    </div>
+    <br><br>
+    <div class="container-fluid foot" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">  
+                    <img src="Image/Icon.png" alt="" style="margin-top: 30px; width:50%; margin-bottom: 2px;">
+    
+                </div>
+                <div class="col-md-7">
+                    <a href="" target="_blank" style="padding-right:3rem ;" class=h-auto text-gray-600 hover:text-black transition duration-150 icon" aria-label="Instagram">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.1364 14H17.8634C15.7331 14 14 15.7332 14 17.8635V24.1365C14 26.2669 15.7331 28 17.8634 28H24.1364C26.2669 28 28 26.2668 28 24.1365V17.8635C28.0001 15.7332 26.2669 14 24.1364 14ZM26.7579 24.1365C26.7579 25.582 25.582 26.7579 24.1365 26.7579H17.8634C16.418 26.7579 15.2421 25.582 15.2421 24.1365V17.8635C15.2421 16.4181 16.418 15.2421 17.8634 15.2421H24.1364C25.5819 15.2421 26.7579 16.4181 26.7579 17.8635V24.1365H26.7579Z" fill="white"></path>
+                        <path d="M21 17.3927C19.0108 17.3927 17.3926 19.011 17.3926 21.0002C17.3926 22.9893 19.0108 24.6074 21 24.6074C22.9892 24.6074 24.6074 22.9893 24.6074 21.0002C24.6074 19.011 22.9892 17.3927 21 17.3927ZM21 23.3652C19.6958 23.3652 18.6347 22.3043 18.6347 21.0001C18.6347 19.6958 19.6957 18.6348 21 18.6348C22.3043 18.6348 23.3653 19.6958 23.3653 21.0001C23.3653 22.3043 22.3042 23.3652 21 23.3652Z" fill="white"></path>
+                        <path d="M24.7587 16.3395C24.5194 16.3395 24.2843 16.4363 24.1153 16.6061C23.9455 16.775 23.8478 17.0102 23.8478 17.2504C23.8478 17.4898 23.9455 17.7249 24.1153 17.8946C24.2842 18.0636 24.5194 18.1613 24.7587 18.1613C24.9989 18.1613 25.2332 18.0636 25.403 17.8946C25.5728 17.7249 25.6696 17.4897 25.6696 17.2504C25.6696 17.0102 25.5728 16.775 25.403 16.6061C25.2341 16.4363 24.9989 16.3395 24.7587 16.3395Z" fill="white"></path>
+                        <circle cx="20.5" cy="20.5" r="20" stroke="greenyellow"></circle>
+                    </svg>
+                    
+                    
+                      </a>
+                    <a href="" target="_blank" style="padding-right:3rem ;" class="h-auto text-gray-600 hover:text-black transition duration-150 icon" aria-label="Twitter">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" >
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29 15.539C28.4121 15.8 27.7791 15.9765 27.1152 16.0554C27.7932 15.6498 28.3135 15.0066 28.5586 14.2404C27.9238 14.616 27.2222 14.8892 26.4728 15.0357C25.8755 14.3981 25.0218 14 24.0771 14C22.2655 14 20.7957 15.4695 20.7957 17.2817C20.7957 17.539 20.8239 17.7887 20.8803 18.0291C18.1521 17.892 15.7338 16.5869 14.1138 14.5991C13.8311 15.0854 13.6696 15.6498 13.6696 16.2507C13.6696 17.3887 14.249 18.3934 15.13 18.9822C14.5928 18.9662 14.0856 18.8169 13.6424 18.5728V18.6131C13.6424 20.2038 14.774 21.5305 16.2766 21.831C16.0015 21.908 15.7113 21.9465 15.4117 21.9465C15.2004 21.9465 14.9938 21.9268 14.7937 21.8883C15.2117 23.1915 16.4231 24.1408 17.86 24.1662C16.7368 25.0469 15.3206 25.5718 13.7832 25.5718C13.5184 25.5718 13.2564 25.5568 13 25.5268C14.4528 26.4563 16.179 27 18.0319 27C24.0705 27 27.3715 22 27.3715 17.6629C27.3715 17.5202 27.3687 17.3775 27.3631 17.2376C28.0045 16.7746 28.5614 16.1972 29 15.539Z" fill="white"></path>
+                        <circle cx="20.5" cy="20.5" r="20" stroke="greenyellow"></circle>
+                    </svg>
+                    
+                      </a>
+                      <a href="" target="_blank" style="padding-right:3rem ;" class=h-auto text-gray-600 hover:text-black transition duration-150 icon" aria-label="Facebook">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" >
+                        <path d="M23.5413 21.875L23.9043 19.3413H21.6347V17.6971C21.6347 17.004 21.9517 16.3283 22.9682 16.3283H24V14.1712C24 14.1712 23.0637 14 22.1684 14C20.2994 14 19.0776 15.2135 19.0776 17.4103V19.3413H17V21.875H19.0776V28H21.6347V21.875H23.5413Z" fill="white"></path>
+                        <circle cx="20.5" cy="20.5" r="20" stroke="greenyellow"></circle>
+                    </svg>
+                    
+                      </a>
+                      <a href="https://youtube.com/433tv" target="_blank" class="h-auto text-gray-600 hover:text-black transition duration-150 icon" aria-label="Youtube">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" >
+                        <path d="M29.6029 16.1856C29.3844 15.3253 28.7403 14.6477 27.9233 14.4173C26.4413 14 20.5 14 20.5 14C20.5 14 14.5587 14 13.0767 14.4173C12.2597 14.6477 11.6156 15.3253 11.3971 16.1856C11 17.7454 11 21 11 21C11 21 11 24.2546 11.3971 25.8144C11.6156 26.6747 12.2597 27.3523 13.0767 27.5827C14.5587 28 20.5 28 20.5 28C20.5 28 26.4413 28 27.9233 27.5827C28.7403 27.3523 29.3844 26.6747 29.6029 25.8144C30 24.2526 30 21 30 21C30 21 30 17.7454 29.6029 16.1856ZM18.5563 23.9526V18.0454L23.5229 21L18.5563 23.9526Z" fill="white"></path>
+                        <circle cx="20.5" cy="20.5" r="20" stroke="greenyellow"></circle>
+                    </svg>
+                    
+                    
+                      </a>
+                      <br><br>
+                    
+                    <p style="font-size: 16px;line-height: 28px;word-spacing: 2px; color: greenyellow; font-family: serif;"></p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="footx" href="">Partnerships</a><br>
+                            <a class="footx" href="">About Us</a><br>
+                            <a class="footx" href="">FAQs</a><br>
+                            <a class="footx" href="">Cookie Policy</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="footx" href="">Careers</a><br>
+                            <a class="footx" href="">Contact Us</a><br>
+                            <a class="footx" href="">Return Policy</a><br>
+                            <a class="footx" href="">Privacy Policy</a><br>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="footx" href="">Terms Of Service</a><br>
+                            <a class="footx" href="">Copyright</a><br>
+                            <a class="footx" href="">Versions</a><br>
+                            <a class="footx" href="">License</a><br>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    
+  </body>
+</html>
